@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+	<style>
+		.test {
+			width: 300px;
+			height: 300px;
+			background-color: red;
+			margin: auto;
+			/*transform: perspective(345px) rotate3d(1, 0, 0, 255deg);*/
+			backface-visibility: hidden;
+			/*			transform: perspective(345px) translate3d(20px,30px,100px);*/
+			/*			transform: perspective(345px) scale3d(2, 3, 2);*/
+			/*
+			transform: perspective(345px) rotate();
+			border-radius: 50%;
+*/
+			
+					
+			animation-name: firstAnim;
+			animation-duration: 2s;
+			animation-iteration-count: 1;
+/*			animation-delay: 3s;*/
+/*			animation-direction: alternate-reverse;*/
+/*			animation-fill-mode: both;*/
+/*			animation-timing-function: cubic-bezier(.35,1.84,.57,-0.62);*/
+			
+			animation-play-state: paused
+		}
+		
+		.test:hover
+		{
+			animation-play-state: running;
+		}
+		
+/*
+		.test:hover{
+			
+			animation-name: firstAnim;
+			animation-duration: 2s;
+			animation-iteration-count: 2;
+			
+		}
+*/
+
+		/*
+		.test:hover {
+			transform: perspective(345px) rotate3d(1, 0, 0, 45deg);
+			transition-duration: 1s;
+		}
+*/
+
+		@keyframes firstAnim {
+
+			0% {
+				background-color: red;
+			}
+
+			100% {
+				background-color: yellowgreen;
+				border-radius: 50%;
+			}
+
+		}
+
+	</style>
+</head>
+
+<body>
+
+
+	<div class="test">
+		<h1>HELLO</h1>
+	</div>
+
+
+</body>
+
+</html>
